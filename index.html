@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
 
@@ -7,379 +8,580 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="WhatsApp کی مکمل اردو گائیڈ، پرائیویسی، سیکیورٹی، فیچرز اور مفید ٹولز۔">
+          content="WA Guide Urdu — WhatsApp کے Features، Privacy، Security اور Tips کی آسان اردو گائیڈ۔">
 
-    <title>WhatsApp Urdu Guide</title>
+    <meta name="theme-color"
+          content="#075e54">
+
+    <title>WA Guide Urdu — WhatsApp کی مکمل اردو گائیڈ</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header class="header">
 
     <div class="logo">
-        <span class="logo-icon">◉</span>
-        <span>WhatsApp Urdu Guide</span>
+        <span class="logo-icon">WA</span>
+        <span>WA Guide Urdu</span>
     </div>
 
-    <button id="darkModeBtn" class="dark-btn">
+    <nav class="navigation">
+
+        <a href="#home">ہوم</a>
+        <a href="#guides">گائیڈز</a>
+        <a href="#privacy">پرائیویسی</a>
+        <a href="#tools">ٹولز</a>
+
+    </nav>
+
+    <button
+        id="darkModeBtn"
+        class="dark-btn"
+        aria-label="Dark Mode">
         🌙
     </button>
 
 </header>
 
 
+<!-- ================= HERO ================= -->
+
 <main>
 
-    <!-- Hero Section -->
+<section class="hero" id="home">
 
-    <section class="hero">
+    <div class="hero-content">
 
-        <div class="hero-content">
+        <p class="small-title">
+            📱 WA GUIDE URDU
+        </p>
 
-            <p class="small-title">آسان اردو میں WhatsApp گائیڈ</p>
+        <h1>
+            WhatsApp کو سمجھیں،
+            <br>
+            آسان اردو میں۔
+        </h1>
 
-            <h1>
-                WhatsApp کو بہتر اور محفوظ طریقے سے استعمال کریں
-            </h1>
+        <p class="hero-text">
 
-            <p class="hero-text">
-                Privacy، Security، Features اور WhatsApp کے عام مسائل
-                کی آسان اور واضح معلومات۔
-            </p>
+            WhatsApp کے Features، Privacy، Security،
+            Settings اور مفید Tips کی آسان اور واضح معلومات۔
 
-            <div class="search-box">
-
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="یہاں WhatsApp کا مسئلہ تلاش کریں..."
-                >
-
-                <button onclick="searchArticles()">
-                    تلاش
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
+        </p>
 
 
-    <!-- Categories -->
+        <!-- SEARCH -->
 
-    <section class="section">
+        <div class="search-box">
 
-        <div class="section-heading">
-            <h2>موضوعات</h2>
-            <p>اپنی ضرورت کا موضوع منتخب کریں</p>
-        </div>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="مثلاً: Linked Devices، Privacy، Backup..."
+                aria-label="WhatsApp Guide Search">
 
-        <div class="categories">
-
-            <div class="category-card">
-                <div class="category-icon">🔐</div>
-                <h3>Privacy</h3>
-                <p>WhatsApp پرائیویسی سیٹنگز</p>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon">🛡️</div>
-                <h3>Security</h3>
-                <p>اکاؤنٹ کو محفوظ رکھنے کے طریقے</p>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon">💬</div>
-                <h3>Chats</h3>
-                <p>Chats، Backup اور Restore</p>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon">⚙️</div>
-                <h3>Features</h3>
-                <p>WhatsApp کے نئے اور اہم Features</p>
-            </div>
+            <button onclick="searchArticles()">
+                🔍 تلاش
+            </button>
 
         </div>
 
-    </section>
+    </div>
 
+</section>
 
-    <!-- Popular Guides -->
 
-    <section class="section">
+<!-- ================= QUICK CATEGORIES ================= -->
 
-        <div class="section-heading">
+<section class="section">
 
-            <h2>Popular Guides</h2>
+    <div class="section-heading">
 
-            <p>
-                WhatsApp کے اہم موضوعات
-            </p>
-
-        </div>
-
-
-        <div id="articles" class="articles">
-
-
-            <article class="article-card">
-
-                <div class="article-icon">
-                    🔐
-                </div>
-
-                <div>
-
-                    <span class="tag">
-                        Security
-                    </span>
-
-                    <h3>
-                        WhatsApp اکاؤنٹ کو محفوظ کیسے رکھیں؟
-                    </h3>
-
-                    <p>
-                        Two-Step Verification اور دوسری
-                        security settings کے بارے میں جانیں۔
-                    </p>
-
-                    <button class="read-btn">
-                        مکمل گائیڈ →
-                    </button>
-
-                </div>
-
-            </article>
-
-
-            <article class="article-card">
-
-                <div class="article-icon">
-                    📱
-                </div>
-
-                <div>
-
-                    <span class="tag">
-                        Devices
-                    </span>
-
-                    <h3>
-                        WhatsApp Linked Devices کیا ہیں؟
-                    </h3>
-
-                    <p>
-                        اپنے WhatsApp سے connected devices
-                        کو سمجھیں اور manage کریں۔
-                    </p>
-
-                    <button class="read-btn">
-                        مکمل گائیڈ →
-                    </button>
-
-                </div>
-
-            </article>
-
-
-            <article class="article-card">
-
-                <div class="article-icon">
-                    👁️
-                </div>
-
-                <div>
-
-                    <span class="tag">
-                        Privacy
-                    </span>
-
-                    <h3>
-                        Last Seen اور Online Privacy
-                    </h3>
-
-                    <p>
-                        اپنی online information کو
-                        privacy settings سے manage کریں۔
-                    </p>
-
-                    <button class="read-btn">
-                        مکمل گائیڈ →
-                    </button>
-
-                </div>
-
-            </article>
-
-
-            <article class="article-card">
-
-                <div class="article-icon">
-                    💾
-                </div>
-
-                <div>
-
-                    <span class="tag">
-                        Backup
-                    </span>
-
-                    <h3>
-                        WhatsApp Chat Backup کیسے کریں؟
-                    </h3>
-
-                    <p>
-                        اپنی اہم chats کا backup سمجھنے
-                        اور manage کرنے کی بنیادی معلومات۔
-                    </p>
-
-                    <button class="read-btn">
-                        مکمل گائیڈ →
-                    </button>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- Free Tools -->
-
-    <section class="tools-section">
-
-        <div class="section-heading">
-
-            <h2>Free WhatsApp Tools</h2>
-
-            <p>
-                ہماری مفت utilities استعمال کریں
-            </p>
-
-        </div>
-
-
-        <div class="tools">
-
-            <div class="tool-card">
-
-                <div class="tool-icon">
-                    🔗
-                </div>
-
-                <h3>
-                    WhatsApp Link Generator
-                </h3>
-
-                <p>
-                    آسانی سے WhatsApp chat link بنائیں۔
-                </p>
-
-                <button>
-                    جلد آرہا ہے
-                </button>
-
-            </div>
-
-
-            <div class="tool-card">
-
-                <div class="tool-icon">
-                    🔳
-                </div>
-
-                <h3>
-                    WhatsApp QR Generator
-                </h3>
-
-                <p>
-                    WhatsApp کے لیے QR code بنانے کا tool۔
-                </p>
-
-                <button>
-                    جلد آرہا ہے
-                </button>
-
-            </div>
-
-
-            <div class="tool-card">
-
-                <div class="tool-icon">
-                    🔤
-                </div>
-
-                <h3>
-                    Character Counter
-                </h3>
-
-                <p>
-                    اپنے WhatsApp text کے characters گنیں۔
-                </p>
-
-                <button>
-                    جلد آرہا ہے
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-
-    <section class="about">
+        <p class="small-title">
+            EXPLORE
+        </p>
 
         <h2>
-            WhatsApp Urdu Guide کیا ہے؟
+            آپ کیا سیکھنا چاہتے ہیں؟
         </h2>
 
         <p>
-            ہمارا مقصد WhatsApp کے پیچیدہ features،
-            privacy settings اور عام مسائل کو آسان
-            اردو زبان میں سمجھانا ہے۔
+            اپنی ضرورت کے مطابق ایک موضوع منتخب کریں۔
         </p>
 
-    </section>
+    </div>
+
+
+    <div class="categories">
+
+
+        <a href="#privacy"
+           class="category-card">
+
+            <div class="category-icon">
+                🔐
+            </div>
+
+            <h3>
+                Privacy
+            </h3>
+
+            <p>
+                Last Seen، Online، Profile Photo اور Privacy Settings
+            </p>
+
+        </a>
+
+
+        <a href="#security"
+           class="category-card">
+
+            <div class="category-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Security
+            </h3>
+
+            <p>
+                Account Security اور Two-Step Verification
+            </p>
+
+        </a>
+
+
+        <a href="#guides"
+           class="category-card">
+
+            <div class="category-icon">
+                💬
+            </div>
+
+            <h3>
+                WhatsApp Guides
+            </h3>
+
+            <p>
+                WhatsApp کے اہم Features اور Settings
+            </p>
+
+        </a>
+
+
+        <a href="#tools"
+           class="category-card">
+
+            <div class="category-icon">
+                🧰
+            </div>
+
+            <h3>
+                Free Tools
+            </h3>
+
+            <p>
+                روزمرہ استعمال کے مفید اور مفت Tools
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= POPULAR GUIDES ================= -->
+
+<section class="section"
+         id="guides">
+
+    <div class="section-heading">
+
+        <p class="small-title">
+            POPULAR
+        </p>
+
+        <h2>
+            مقبول WhatsApp گائیڈز
+        </h2>
+
+        <p>
+            یہاں ہم عام طور پر تلاش کیے جانے والے موضوعات شامل کریں گے۔
+        </p>
+
+    </div>
+
+
+    <div id="articles"
+         class="articles">
+
+
+        <!-- ARTICLE 1 -->
+
+        <article class="article-card">
+
+            <div class="article-icon">
+                🔐
+            </div>
+
+            <div>
+
+                <span class="tag">
+                    SECURITY
+                </span>
+
+                <h3>
+                    WhatsApp Account کو محفوظ کیسے رکھیں؟
+                </h3>
+
+                <p>
+                    Two-Step Verification، suspicious activity
+                    اور account security کی بنیادی معلومات۔
+                </p>
+
+                <button class="read-btn">
+                    گائیڈ پڑھیں →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTICLE 2 -->
+
+        <article class="article-card">
+
+            <div class="article-icon">
+                📱
+            </div>
+
+            <div>
+
+                <span class="tag">
+                    DEVICES
+                </span>
+
+                <h3>
+                    Linked Devices کیا ہوتے ہیں؟
+                </h3>
+
+                <p>
+                    WhatsApp کے connected devices کو سمجھیں
+                    اور انہیں manage کرنے کی بنیادی معلومات حاصل کریں۔
+                </p>
+
+                <button class="read-btn">
+                    گائیڈ پڑھیں →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTICLE 3 -->
+
+        <article class="article-card"
+                 id="privacy">
+
+            <div class="article-icon">
+                👁️
+            </div>
+
+            <div>
+
+                <span class="tag">
+                    PRIVACY
+                </span>
+
+                <h3>
+                    Last Seen اور Online Privacy
+                </h3>
+
+                <p>
+                    اپنی online information اور visibility
+                    کو WhatsApp Privacy Settings سے manage کریں۔
+                </p>
+
+                <button class="read-btn">
+                    گائیڈ پڑھیں →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTICLE 4 -->
+
+        <article class="article-card">
+
+            <div class="article-icon">
+                💾
+            </div>
+
+            <div>
+
+                <span class="tag">
+                    BACKUP
+                </span>
+
+                <h3>
+                    WhatsApp Chat Backup کیا ہے؟
+                </h3>
+
+                <p>
+                    Chat backup، restore اور اپنی اہم chats
+                    کو محفوظ رکھنے کی بنیادی معلومات۔
+                </p>
+
+                <button class="read-btn">
+                    گائیڈ پڑھیں →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTICLE 5 -->
+
+        <article class="article-card"
+                 id="security">
+
+            <div class="article-icon">
+                🔑
+            </div>
+
+            <div>
+
+                <span class="tag">
+                    ACCOUNT
+                </span>
+
+                <h3>
+                    Two-Step Verification کیا ہے؟
+                </h3>
+
+                <p>
+                    WhatsApp account میں اضافی security layer
+                    کے بارے میں آسان معلومات۔
+                </p>
+
+                <button class="read-btn">
+                    گائیڈ پڑھیں →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTICLE 6 -->
+
+        <article class="article-card">
+
+            <div class="article-icon">
+                ⚙️
+            </div>
+
+            <div>
+
+                <span class="tag">
+                    FEATURES
+                </span>
+
+                <h3>
+                    WhatsApp کے Hidden Features
+                </h3>
+
+                <p>
+                    ایسے مفید features جنہیں بہت سے users
+                    استعمال نہیں کرتے۔
+                </p>
+
+                <button class="read-btn">
+                    گائیڈ پڑھیں →
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= TOOLS ================= -->
+
+<section class="tools-section"
+         id="tools">
+
+    <div class="section-heading">
+
+        <p class="small-title">
+            FREE TOOLS
+        </p>
+
+        <h2>
+            مفت اور مفید Tools
+        </h2>
+
+        <p>
+            ہم اس section میں اپنے original tools شامل کریں گے۔
+        </p>
+
+    </div>
+
+
+    <div class="tools">
+
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                🔗
+            </div>
+
+            <h3>
+                WhatsApp Link Generator
+            </h3>
+
+            <p>
+                اپنے WhatsApp نمبر کے لیے آسان chat link بنائیں۔
+            </p>
+
+            <button>
+                جلد آرہا ہے
+            </button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                🔳
+            </div>
+
+            <h3>
+                QR Code Generator
+            </h3>
+
+            <p>
+                مختلف استعمال کے لیے QR codes بنانے کا tool۔
+            </p>
+
+            <button>
+                جلد آرہا ہے
+            </button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                🔤
+            </div>
+
+            <h3>
+                Message Counter
+            </h3>
+
+            <p>
+                اپنے text کے characters اور words count کریں۔
+            </p>
+
+            <button>
+                جلد آرہا ہے
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="about">
+
+    <p class="small-title">
+        ABOUT WA GUIDE URDU
+    </p>
+
+    <h2>
+        پیچیدہ معلومات، آسان اردو میں۔
+    </h2>
+
+    <p>
+        WA Guide Urdu کا مقصد WhatsApp کے features،
+        privacy، security اور settings کو عام users کے لیے
+        آسان زبان میں سمجھانا ہے۔
+    </p>
+
+</section>
+
 
 </main>
 
 
+<!-- ================= FOOTER ================= -->
+
 <footer class="footer">
 
     <div class="footer-logo">
-        WhatsApp Urdu Guide
+        WA Guide Urdu
     </div>
 
     <p>
-        آسان معلومات، بہتر WhatsApp تجربہ۔
+        WhatsApp کی آسان اردو گائیڈ
     </p>
+
 
     <div class="footer-links">
 
-        <a href="#">About</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Contact</a>
+        <a href="#home">
+            ہوم
+        </a>
+
+        <a href="#guides">
+            گائیڈز
+        </a>
+
+        <a href="#privacy">
+            Privacy
+        </a>
+
+        <a href="#tools">
+            Tools
+        </a>
 
     </div>
 
+
     <p class="copyright">
-        © 2026 WhatsApp Urdu Guide
+        © 2026 WA Guide Urdu. All rights reserved.
     </p>
 
 </footer>
 
 
+<!-- ================= JAVASCRIPT ================= -->
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
